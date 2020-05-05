@@ -6,4 +6,5 @@ int main() {
     int a = 165537, b = -34991;
     short c = (short) a, d = (short) b;
     short e = 1;
+    printf("aaaa");
 }
