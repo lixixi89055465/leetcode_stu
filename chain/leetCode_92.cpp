@@ -10,33 +10,34 @@ struct ListNode {
 class Solution {
 public:
     ListNode *reverseBetween(ListNode *head, int m, int n) {
-        ListNode *new_head = NULL;
-        ListNode *next = NULL;
+        int change_len = n - m + 1;
+        ListNode *pre_head = NULL;
         ListNode *result = head;
-        int size = m;
-        while (size) {
+        while (head && --m) {
+            pre_head = head;
             head = head->next;
-            size--;
         }
-        ListNode *newHead = NULL;
-        ListNode *next = NULL;
-        size = n - m + 1;
-        while (size) {
-            next = head->next;
+        ListNode *modify_list_tail = head;
+        ListNode *new_head = NULL;
+        while (head && change_len) {
+            ListNode *next = head->next;
             head->next = new_head;
             new_head = head;
             head = next;
+            change_len--;
         }
-        if (head) {
-
+        modify_list_tail->next = head;
+        if (pre_head) {
+            pre_head->next = new_head;
         } else {
-
+            result = new_head;
         }
         return result;
     }
 };
 
 int main() {
+    printf("aaaaa");
     ListNode a(1);
     ListNode b(2);
     ListNode c(3);
@@ -48,22 +49,12 @@ int main() {
     d.next = &e;
     e.next = NULL;
     Solution solve;
-    ListNode *head = &a;
-    printf("Before reverse:\n");
+    printf("test111 ---- %d\n");
+    ListNode *head = solve.reverseBetween(&a, 2, 4);
+    printf("test222 ---- %d\n",head->val);
     while (head) {
         printf("%d\n", head->val);
         head = head->next;
     }
-    head = solve.reverseList(&a);
-    printf("after reverse:\n");
-    printf("head is : %d\n", head);
-    while (head) {
-        printf("%d\n", head->val);
-        head = head->next;
-    }
-    printf("head is : %d\n", head);
-
     return 0;
-
-
 }
