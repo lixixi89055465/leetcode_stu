@@ -1,3 +1,4 @@
+#include <set>
 #include "stdio.h"
 
 struct ListNode {
@@ -37,8 +38,8 @@ int main() {
     d.next = &e;
     e.next = NULL;
     Solution solve;
-    printf("test111 ---- %d\n");
-    ListNode *head = solve.reverseBetween(&a, 2, 4);
+    printf("test111 ---- \n");
+    ListNode *head = solve.getIntersectionNode(&a, &b);
     printf("test222 ---- %d\n", head->val);
     while (head) {
         printf("%d\n", head->val);
