@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_BUILD_TYPE Debug)
 
 #set(SOURCE_FILES leetCode_92.cpp)
-set(SOURCE_FILES chain/leetCode_160_1.cpp)
+set(SOURCE_FILES chain/leetCode_162_1.cpp)
 #add_executable(leetcode_stu main.c)
 add_executable(leetcode_stu ${SOURCE_FILES})
 target_link_libraries(leetcode_stu)
