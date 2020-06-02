@@ -5,7 +5,7 @@
 #include "testSet.h"
 #include "set"
 
-int main() {
+int main9() {
     std::set<int> test_set;//STL set
     const int A_LEN = 7;
     const int B_LEN = 8;

@@ -1,4 +1,4 @@
-#include "stdio.h"
+﻿#include "stdio.h"
 
 struct ListNode {
     int val;//存储元素的数据域
@@ -48,7 +48,7 @@ public:
     }
 };
 
-int main() {
+int main5() {
     printf("aaaaa");
     ListNode a(1);
     ListNode b(2);

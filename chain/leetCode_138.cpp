@@ -9,7 +9,7 @@ struct RandomListNode {
 };
 
 
-int main() {
+int main2() {
     std::map<RandomListNode *, int> node_map;
     RandomListNode a(5);
     RandomListNode b(3);
@@ -23,7 +23,7 @@ int main() {
     node_map[&b] = 2;
     node_map[&c] = 3;
     printf("a.random id = %d\n", node_map[a.random]);
-    printf("b.random id = %d \n ", node_map[b.random])
+    printf("b.random id = %d \n ", node_map[b.random]);
     printf("c.random id = %d \n", node_map[c.random]);
     return 0;
 }

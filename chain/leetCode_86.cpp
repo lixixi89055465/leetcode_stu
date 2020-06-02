@@ -1,4 +1,4 @@
-//
+﻿//
 //  main.cpp
 //  aaa
 //
@@ -45,7 +45,7 @@ public:
     }
 };
 
-int main() {
+int main1() {
     printf("aaaaa");
     ListNode a(5);
     ListNode b(2);

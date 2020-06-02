@@ -36,7 +36,7 @@ public:
     }
 };
 
-int main() {
+int main3() {
     printf("aaaaa");
     ListNode a(1);
     ListNode b(2);

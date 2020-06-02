@@ -1,4 +1,4 @@
-#include <set>
+﻿#include <set>
 #include "stdio.h"
 
 struct ListNode {
@@ -23,7 +23,7 @@ public:
     }
 };
 
-int main() {
+int main6() {
     printf("aaaaa");
     ListNode a(1);
     ListNode b(2);

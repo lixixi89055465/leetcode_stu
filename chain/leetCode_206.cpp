@@ -22,7 +22,7 @@ public:
     }
 };
 
-int main() {
+int main8() {
     ListNode a(1);
     ListNode b(2);
     ListNode c(3);
