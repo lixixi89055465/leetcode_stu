@@ -3,9 +3,9 @@
 using namespace std;
 int main() {
 	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
-	cout << "Õû¸öÊı×éÕ¼ÓÃµÄÄÚ´æ´óĞ¡:"<<sizeof(arr) << endl;
-	cout << "Í³¼Æ"<<sizeof(arr[0]) << endl;
-	cout << "µØÖ·Îª:" << arr << endl;
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½Ãµï¿½ï¿½Ú´ï¿½ï¿½Ğ¡:"<<sizeof(arr) << endl;
+	cout << "Í³ï¿½ï¿½"<<sizeof(arr[0]) << endl;
+	cout << "ï¿½ï¿½Ö·Îª:" << arr << endl;
 	int arrs[2][3] = { {1,2,3},{4,5,6} };
 	cout << arrs << endl;
 	cout << arrs[0] << endl;

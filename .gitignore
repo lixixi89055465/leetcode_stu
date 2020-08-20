@@ -6,3 +6,4 @@ Debug
 *.filters
 *.user
 .vs
+*.exe
