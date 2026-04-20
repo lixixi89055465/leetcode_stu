@@ -7,3 +7,5 @@ Debug
 *.user
 .vs
 *.exe
+node_modules
+*.aaaa
