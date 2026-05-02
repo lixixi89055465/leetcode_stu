@@ -5,6 +5,6 @@
     "outDir": "./dist", // 编译后的 js 文件输出到这里
     "rootDir": "./src", // 源码目录 (可选，推荐)
     "sourceMap": true, // 【核心】生成 .map 文件，用于断点映射
-    "strict": true
+    "strict": true //严格模式 
   }
 }
